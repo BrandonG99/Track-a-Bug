@@ -1,0 +1,89 @@
+.sidebar {
+  flex: 0.5;
+  border-right: 0.5px solid rgb(232, 223, 223);
+  min-height: 100vh;
+  background-color: white;
+
+  .top {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: -1rem;
+      color: #2879f0;
+    }
+  }
+
+  hr {
+    height: 0;
+    border: 0.5px solid rgb(232, 223, 223);
+  }
+
+  .center {
+    padding-left: 0.75rem;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .title {
+        font-size: 0.75rem;
+        font-weight: bold;
+        color: rgb(124, 124, 124);
+        margin-top: 1rem;
+        margin-bottom: 0.33rem;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 0.33rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba(40, 121, 240, 0.1);
+        }
+
+        .icon {
+          color: #2879f0;
+          font-size: 1rem;
+        }
+
+        p {
+          font-size: 1rem;
+          font-weight: 600;
+          margin-left: 0.5rem;
+          margin-bottom: 0rem;
+          color: rgb(124, 124, 124);
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    margin: 0.66rem;
+
+    .colourOption {
+      height: 1.25rem;
+      width: 1.25rem;
+      border-radius: 0.33rem;
+      border: 1px solid #2879f0;
+      margin: 0.33rem;
+      cursor: pointer;
+
+      &:nth-child(1) {
+        background-color: whitesmoke;
+      }
+      &:nth-child(2) {
+        background-color: #333;
+      }
+    }
+  }
+}

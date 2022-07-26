@@ -1,0 +1,47 @@
+.stats {
+  display: flex;
+  min-height: 100vh;
+
+  .stats-container {
+    flex: 3;
+
+    .bug-stats-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #2879f0;
+      font-size: 1.75rem;
+      font-weight: bold;
+      margin: 1.5rem;
+    }
+
+    .top-charts {
+      display: flex;
+      padding: 1.25rem;
+      gap: 1.25rem;
+
+      .top-chart-1 {
+        flex: 2;
+      }
+
+      .top-chart-2 {
+        flex: 2;
+        color: gray;
+      }
+    }
+
+    .bottom-charts {
+      display: flex;
+      padding: 1.25rem;
+      gap: 1.25rem;
+
+      .featured-chart {
+        flex: 1;
+      }
+
+      .bottom-chart-1 {
+        flex: 2;
+      }
+    }
+  }
+}

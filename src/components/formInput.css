@@ -1,0 +1,33 @@
+.formInput {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: black;
+}
+
+.form {
+  padding: 1rem;
+  margin: 10px 0;
+  border: 1px solid #2879f0;
+}
+
+span {
+  font-size: 0.75rem;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+input:invalid[focused="true"] {
+  border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ span {
+  display: block;
+}
